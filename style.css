@@ -1,0 +1,331 @@
+/* colors: #717499, #1D202A, #f2f0f0, #7E93B9*/
+
+body {
+    font-family: 'Sintony', Arial, Helvetica, sans-serif;
+    background-color: #717499;
+    color: #1D202A;
+}
+#navbar {
+    background-color: #1d202a;
+    color: #f2f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-bar-right li {
+    list-style-type: none;
+    display: block;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 10pt;
+    float: left;
+    color: #f2f0f0;
+    
+}
+
+.nav-bar-right a {
+    color: #f2f0f0;
+}
+
+.nav-bar-right li a:hover {
+    text-decoration: none;
+    color: #717499;
+}
+
+.nav-bar-left {
+    color: #f2f0f0;
+    padding: 10px 10px;
+    font-size: 14pt;
+    line-height: 40px;
+    vertical-align: center;
+}
+
+.nav-bar-left:hover {
+    text-decoration: none;
+    color: #717499;
+}
+
+/* home/index */
+
+#home {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 100vw;
+    height: 50vw;
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0px;
+    position: relative;
+    margin: 0;*/
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    color: #f2f0f0;
+}
+
+#large-header {
+    background-image: url(assets/b&w.profile.altered.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 45%;
+}
+
+#large-header h1{
+    font-size: 28pt;
+}
+
+#large-header h4{
+    font-size: 16pt;
+}
+
+.quick-contacts{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    padding: 0;
+}
+
+.quick-contacts li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 10pt;
+}
+
+.quick-contacts li a{
+    /*color: #717499;*/
+    color: #f2f0f0;
+
+}
+
+.quick-contacts li a:hover{
+    color: #7E93B9;
+    text-decoration: none;
+}
+
+/* about page */
+
+#about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+    
+}
+
+#profile-picture img{
+    display: block;
+    height: 350px;
+    max-width: 80%;
+    float: left;
+    padding-top: 50px;
+    border-radius: 5px;
+}
+
+#about-me-paragraph{
+    border: 3px solid #1D202A;
+    background-color: #f2f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#about-me-paragraphy h5{
+    padding-top: 20px;
+}
+
+#pet-pictures img{
+    width: 70px;
+    height: 70px;
+    float: center;
+    text-align: center;
+}
+
+#pet-pictures li{
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+#resume{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#resume a{
+    text-align: center;
+    padding: 10px;
+    color: #1D202A;
+    border: 3px solid #1D202A;
+    background-color: #f2f0f0;
+    padding: 10px 40px;
+}
+
+#resume a:hover{
+    text-decoration: underline;
+    color: #7E93B9;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* philosophy page */
+
+#philosophy{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+}
+
+.philosophy-subheader {
+    padding: 10px 30px;
+    color: #f2f0f0;
+    background-color:#1D202A;
+    margin: 40px;
+    height: 45%;
+}
+
+#philosophy p{
+    margin: 0 0 30px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.tenets{
+    text-align: center;
+    vertical-align: center;
+}
+
+/* works page */
+
+#works {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+}
+
+.works-subheader{
+    color: #f2f0f0;
+    background-color: #1D202A;
+    height: 45%;
+    margin: 40px;
+}
+
+#works img{
+    width: 75%;
+    height: 75%;
+    border: 3px solid #7E93B9;
+}
+
+#works img:hover{
+    transform: scale(1.25);
+}
+
+/* contact page */
+
+#contact{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15%;
+}
+
+.form-left {
+    padding-top: 20px;
+}
+
+.form-left form input {
+    display: block;
+    float: left;
+
+}
+
+.form-right {
+    padding-top: 20px;
+}
+
+input{
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 0;
+    border-bottom: 2px solid #1D202A;
+    width: 100%;
+}
+
+.form-message textarea {
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-bottom: 2px solid #1D202A;
+}
+
+.button button{
+    text-decoration: none;
+    padding: 10px;
+    color: #1D202A;
+    border: 2px solid #1D202A;
+    background-color: #f2f0f0;
+}
+
+.button button:hover{
+    color: #f2f0f0;
+    background-color: #1D202A;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1D202A;
+    color: #f2f0f0;
+    text-align: center;
+    vertical-align: center;
+    line-height: 20px;
+    height: 20px;
+    font-size: 8pt;
+    z-index: 1;
+}
+
+/*#footer div{
+    padding-top: 4px;
+    text-align: center;
+}

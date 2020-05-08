@@ -1,0 +1,14 @@
+{
+    "name": "DS20",
+    "short_name": "DS20",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#7e93b9",
+    "background_color": "#7e93b9",
+    "display": "standalone"
+}
