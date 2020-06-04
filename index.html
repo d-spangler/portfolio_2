@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet'><!--Sintony Font-->
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'><!--Barlow Font-->
 
     <!--Tab Icon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"> 
@@ -22,53 +22,57 @@
 
 <body>
     <!--Navigation Bar Start-->
-    <nav id = "navbar">
-        <div class = "container">
-            <div class = "row"> 
-        <!--Top left Column 1-->
-                <div class = "col-md-7">
-                    <a class = "nav-bar-left" href="index.html">dss</a>
-                </div>
-        <!--Top right column 2-->
-                <div class = "col">
-                    <ul class = "nav-bar-right">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="philosophy.html">philosophy</a></li>
-                        <li><a href="works.html">works</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="philosophy.html">philosophy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="works.html">works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+              </ul>
             </div>
-        </div>    
-    </nav>
+          </nav>
+    </section>
     <!--Navigation Bar End-->
 
-
     <!--Home Section Start-->
-    <section id = "home">
-        <div class = "home-subheader">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-lg-12">
-                        <!--Name/Title, Quick contacts-->
-                        <div id="large-header" class = "title-screen">
-                            <h1>dylan s spangler</h1>
-                            <h4>developer in training</h4>
-                            <ul class = "quick-contacts">
-                                <li><a href="https://www.linkedin.com/in/dylan-spangler-9a30241a4/" target = "blank">linkedin</a></li>
-                                <li>|</li>
-                                <li><a href="https://github.com/d-spangler" target = "blank">github</a></li>
-                                <li>|</li>
-                                <li><a href="https://codepen.io/dspangler" target = "blank">codepen</a></li>                         
-                            </ul>
-                        </div>
+    <section class="home">
+        <div class="jumbotron" style="background-image: url(assets/b&w.profile.altered.jpg);"></div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-6">
+                    <div class="name-title">
+                        <h1>dylan s spangler</h1>
+                        <h4>junior software developer</h4>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-4">
+                    <ul class = "quick-contacts">
+                        <li><a href="https://www.linkedin.com/in/dylan-spangler-9a30241a4/" target = "blank">linkedin</a></li>
+                        <li>|</li>
+                        <li><a href="https://github.com/d-spangler" target = "blank">github</a></li>
+                        <li>|</li>
+                        <li><a href="https://codepen.io/dspangler" target = "blank">codepen</a></li>                         
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Home section End-->
 
     <!--Footer Section Start-->
     <section id = "footer">

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Sintony' rel='stylesheet'><!--Sintony Font-->
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'><!--Barlow Font-->
 
     <!--Tab Icon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"> 
@@ -22,64 +22,64 @@
 
 <body>
     <!--Navigation Bar Start-->
-    <nav id = "navbar">
-        <div class = "container">
-            <div class = "row"> 
-        <!--Top left Column 1-->
-                <div class = "col-md-7">
-                    <a class = "nav-bar-left" href="#">dss</a>
-                </div>
-        <!--Top right column 2-->
-                <div class = "col">
-                    <ul class = "nav-bar-right">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="philosophy.html">philosophy</a></li>
-                        <li><a href="works.html">works</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="philosophy.html">philosophy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="works.html">works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+              </ul>
             </div>
-        </div>    
-    </nav>
+          </nav>
+    </section>
     <!--Navigation Bar End-->
 
 
     <!--About Section Start-->
-    <section id = "about">
-        <div class = "container">
-            <div class = "row">
-
-                <!--Profile Picture-->
-                <div id = "profile-picture" class = "col-sm-offset-2 col-sm-4"><img src="assets/linkedin.profile.png" alt></div>
-                
-                <!--About Paragraph-->
-                <div id = "about-me-paragraph" class = "col-6">
-                    <h5>| about</h5>
-                    <br>
-                    <p class="text-small">
+    <section class="about">
+        <div class="jumbotron justify-content-md-center">
+            <h5>| about</h5>
+                <br>
+                    <p>
                     Hello, my name is Dylan Spangler and I am currently in Eleven Fifty Academy's twelve week Software Development
                     program. Previously, I was a sales and service manager in the retail industry and before that a high school football
                     coach. In every step of my post-collegiate career I have learned the importance of communication and commitment, while
                     also maintaining creativity in structured environments.</p>
-                </div>
-
-                <!--Other Pictures-->
-                <div class = "col-2">
-                    <ul id="pet-pictures">
-                        <li><img src="assets/naked_d20.png"></li>
-                        <li><img src="assets/naked_d20.png"></li>
-                        <li><img src="assets/naked_d20.png"></li>
-                    </ul>
+                <div class="text-center">
+                    <img src="assets/linkedin.profile.png" alt="Profile Pic" id="profile-picture" style="text-align: center;">
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-6">
+                    <div class="name-title">
+                        <h1>dylan s spangler</h1>
+                        <h4>junior software developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <!--Downloadable Resume-->
         <div class = "container">
             <div class = "row">
                 <div id = "resume" class = "col-lg-12"> 
-                    <a href="assets/DylanSpangler.Resume.2018.pdf" target="blank">download resume</a>  
+                    <a href="assets/dylan.spangler.resume.2020.pdf" target="blank">download resume</a>  
                 </div>
             </div>
         </div>

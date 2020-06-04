@@ -1,131 +1,98 @@
 /* colors: #717499, #1D202A, #f2f0f0, #7E93B9*/
-
-body {
-    font-family: 'Sintony', Arial, Helvetica, sans-serif;
-    background-color: #717499;
-    color: #1D202A;
-}
-#navbar {
-    background-color: #1d202a;
-    color: #f2f0f0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    width: 100%;
-    height: 40px;
-}
-
-.nav-bar-right li {
-    list-style-type: none;
-    display: block;
-    position: relative;
-    padding: 10px 10px;
-    font-size: 10pt;
-    float: left;
-    color: #f2f0f0;
+:root {
+    font-size: 16px;
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
+    --text-primary: #f2f0f0;
+    --text-secondary: #7E93B9;
+    --bg-primary: black;
+    --bg-secondary: #1D202A;
     
 }
 
-.nav-bar-right a {
-    color: #f2f0f0;
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
 }
 
-.nav-bar-right li a:hover {
+body::-webkit-scrollbar {
+    width: 0.5rem
+}
+
+body::-webkit-scrollbar-track{
+    background:var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--text-secondary);
+}
+
+.navbar-nav a{
+    color: var(--text-primary);
+    margin: 0 15px;
+}
+
+.nav-link a{
+    display: flex;
+    align-items: center;
+    color: var(--text-primary);
     text-decoration: none;
-    color: #717499;
 }
 
-.nav-bar-left {
-    color: #f2f0f0;
-    padding: 10px 10px;
-    font-size: 14pt;
-    line-height: 40px;
-    vertical-align: center;
+.navbar-nav a:hover{
+    color: var(--text-secondary);
 }
 
-.nav-bar-left:hover {
-    text-decoration: none;
-    color: #717499;
-}
 
 /* home/index */
 
-#home {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
-    width: 100vw;
-    height: 50vw;
-    height: 100%;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0px;
-    position: relative;
-    margin: 0;*/
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    color: #f2f0f0;
+.jumbotron{
+    background-color: var(--bg-primary);
+    height: 65vh;
+    margin-top: 5%;
+    background-repeat:no-repeat;
+    background-position: center center;
+    color: var(--text-primary);
 }
 
-#large-header {
-    background-image: url(assets/b&w.profile.altered.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
-    vertical-align: middle;
-    position: relative;
+
+.name-title {
     text-align: center;
-    vertical-align: center;
-    padding-top: 45%;
 }
 
-#large-header h1{
-    font-size: 28pt;
-}
-
-#large-header h4{
-    font-size: 16pt;
+.name-title h1{
+    color: var(--text-secondary);
+    font-weight: bold;
 }
 
 .quick-contacts{
     text-decoration: none;
     list-style-type: none;
     text-align: center;
-    position: relative;
     padding: 0;
 }
 
 .quick-contacts li{
     list-style-type: none;
     display: inline-block;
-    position: relative;
     padding: 10px 10px;
     font-size: 10pt;
 }
 
 .quick-contacts li a{
-    /*color: #717499;*/
-    color: #f2f0f0;
+    color: var(--text-primary);
 
 }
 
 .quick-contacts li a:hover{
-    color: #7E93B9;
+    color: var(--text-secondary);
     text-decoration: none;
 }
 
-/* about page */
+/* ABOUT PAGE */
 
-#about {
+/* #about {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -145,27 +112,23 @@ body {
     border-radius: 5px;
 }
 
-#about-me-paragraph{
-    border: 3px solid #1D202A;
-    background-color: #f2f0f0;
+.about-me-paragraph{
+    border: 3px solid var(--text-secondary);
+    background-color: var(--text-secondary);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px;  
 }
 
-#about-me-paragraphy h5{
+#about-me-paragraph h5{
     padding-top: 20px;
-}
+} */
 
-#pet-pictures img{
-    width: 70px;
-    height: 70px;
-    float: center;
+#profile-picture{
+    height: 350px;
+    max-width: 80%;
+    padding-top: 50px;
+    border-radius: 5px;
     text-align: center;
-}
-
-#pet-pictures li{
-    list-style-type: none;
-    padding-top: 30px;
 }
 
 #resume{
@@ -177,22 +140,15 @@ body {
 #resume a{
     text-align: center;
     padding: 10px;
-    color: #1D202A;
-    border: 3px solid #1D202A;
-    background-color: #f2f0f0;
+    color: var(--text-secondary);
+    border: 3px solid var(--text-secondary);
+    background-color: var(--bg-secondary);
     padding: 10px 40px;
 }
 
 #resume a:hover{
     text-decoration: underline;
-    color: #7E93B9;
-}
-
-.container{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    color: var(--text-primary);
 }
 
 /* philosophy page */
@@ -315,8 +271,8 @@ input{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1D202A;
-    color: #f2f0f0;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
     text-align: center;
     vertical-align: center;
     line-height: 20px;
